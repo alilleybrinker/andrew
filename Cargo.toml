@@ -3,6 +3,9 @@ name = "andrew"
 version = "0.1.0"
 edition = "2024"
 publish = false
+repository = "https://github.com/alilleybrinker/andrew"
+description = "Personal CLI tool for Andrew's common tasks"
+homepage = "https://github.com/alilleybrinker/andrew"
 
 [dependencies]
 anyhow = "1.0.90"
@@ -15,3 +18,11 @@ clap = { version = "4.5.20", features = [
 ] }
 minijinja = "2.3.1"
 minijinja-embed = "2.3.1"
+
+# The profile that 'dist' will build with
+[profile.dist]
+inherits = "release"
+lto = "thin"
+
+[package.metadata.dist]
+dist = true
