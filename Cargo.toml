@@ -1,11 +1,17 @@
 [package]
 name = "andrew"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
 publish = false
 
 [dependencies]
 anyhow = "1.0.90"
-clap = { version = "4.5.20", features = ["derive", "env", "string", "unicode", "wrap_help"] }
+clap = { version = "4.5.20", features = [
+    "derive",
+    "env",
+    "string",
+    "unicode",
+    "wrap_help",
+] }
 minijinja = "2.3.1"
 minijinja-embed = "2.3.1"
